@@ -1,179 +1,178 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claudio Matias Gonzalez Ferreyra | Portafolio</title>
-    <!-- Aquí van tus enlaces de fuentes y Swiper CSS -->
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claudio Matias | Software Engineer</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOz" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght=0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght=0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <!-- ========================================== -->
-    <!--             MENÚ DE NAVEGACIÓN             -->
-    <!-- ========================================== -->
-    <header id="header" class="grid-header">
-        <div class="header-wrap_left">
-            <a href="index.html" class="logo-brand">CMGF</a>
-        </div>
-        
-        <div class="header-wrap_center">
-            <nav id="navbar" class="main-menu">
-                <ul class="menu-list">
-                    <li><a href="#hero" class="menu-link">Inicio</a></li>
-                    <li><a href="#about" class="menu-link">Sobre Mí</a></li>
-                    <li><a href="#projects" class="menu-link">Proyectos</a></li>
-                    <li><a href="#contact" class="menu-link">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="header-wrap_right">
-            <!-- Se mantiene limpio, sin el botón de búsqueda innecesario -->
-            <div class="social-networks">
-                <a href="https://github.com" target="_blank">GitHub</a>
-            </div>
-        </div>
-    </header>
-
-    <main class="main-content">
-        
-        <!-- ========================================== -->
-        <!--                SECCIÓN HERO                -->
-        <!-- ========================================== -->
-        <section id="hero" class="hero-section target-section">
-            <div class="hero-content">
-                <span class="category-tag">Ingeniero de Software</span>
-                <h1 class="hero-title">Desarrollo Backend & Automatización</h1>
-                <p class="hero-description">
-                    Especializado en crear soluciones eficientes con Python, entornos Linux y optimización de procesos mediante Docker.
-                </p>
-                <!-- Ojo aquí: Cambia el michi por tu foto cuando la tengas lista, 
-                     o déjalo si quieres un easter egg de programador, jaja -->
-                <div class="hero-image-wrap">
-                    <img src="images/michi3.webp" alt="Matias Gonzalez" class="hero-img">
-                </div>
-            </div>
-        </section>
-
-        <!-- ========================================== -->
-        <!--              SOBRE MÍ (ABOUT)              -->
-        <!-- ========================================== -->
-        <section id="about" class="about-section target-section">
-            <div class="container">
-                <h2>Sobre Mí</h2>
-                <p>
-                    Apasionado por la infraestructura, el desarrollo backend y la automatización de tareas. 
-                    Me enfoco en escribir código limpio, documentado y listo para entornos de producción estables en Ubuntu.
-                </p>
-            </div>
-        </section>
-
-        <!-- ========================================== -->
-        <!--             SECCIÓN PROYECTOS              -->
-        <!-- ========================================== -->
-<section id="portfolio" class="portfolio-position padding-medium">
-  <div class="container">
-    <div class="row section-title justify-content-center text-center">
-      <div class="col-md-8 col-sm-12">
-        <h2 class="display-5 text-uppercase mb-4">Mi Portafolio</h2>
-        <p>Construyendo soluciones reales paso a paso. Actualmente desarrollando y validando proyectos clave en mi roadmap de ingeniería.</p>
-      </div>
-    </div>
-
-    <div class="row filter-button-group text-center my-4">
-      <div class="col-md-12">
-        <button class="filter-button active" data-filter="*">Todos los Proyectos</button>
-        <button class="filter-button" data-filter=".python">Python</button>
-        <button class="filter-button" data-filter=".linux">Linux / Bash</button>
-      </div>
-    </div>
-
-    <div class="row isotope-container justify-content-center">
-      
-      <div class="col-md-4 col-sm-6 item python mb-4">
-        <div class="card p-4 h-100 shadow-sm offer-item">
-          <div class="d-flex align-items-center mb-3">
-            <div class="icon-wrap offer-svg me-3">
-              <svg width="32" height="32" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
-                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-              </svg>
-            </div>
-            <h4 class="card-title mb-0">Gestor de Cuentas Financieras</h4>
-          </div>
-          <p class="card-text text-muted small">Aplicación desarrollada en Python enfocada en la gestión de flujos, control de ingresos y automatización de presupuestos con persistencia de datos estructurada.</p>
-          <div class="mt-auto pt-3">
-            <span class="badge bg-secondary text-dark me-1">Python</span>
-            <span class="badge bg-secondary text-dark me-1">SQLite</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 item linux mb-4">
-        <div class="card p-4 h-100 shadow-sm offer-item">
-          <div class="d-flex align-items-center mb-3">
-            <div class="icon-wrap offer-svg me-3">
-              <svg width="32" height="32" fill="currentColor" class="bi bi-terminal" viewBox="0 0 16 16">
-                <path d="M6 5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 5ZM5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5A.5.5 0 0 1 5 8Zm-1 3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 4 11Z"/>
-                <path d="M1 2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2H3a2 2 0 0 1 -2 -2V2Zm1 0v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1 -1V2a1 1 0 0 0 -1 -1H3a1 1 0 0 0 -1 1Z"/>
-              </svg>
-            </div>
-            <h4 class="card-title mb-0">Ubuntu Setup Automation Script</h4>
-          </div>
-          <p class="card-text text-muted small">Script de automatización en Bash diseñado para entornos Linux. Ejecuta la actualización del sistema e instala de forma desatendida herramientas de desarrollo (VS Code, Sublime Text, Firefox) optimizando tiempos de despliegue local.</p>
-          <div class="mt-auto pt-3">
-            <span class="badge bg-secondary text-dark me-1">Bash</span>
-            <span class="badge bg-secondary text-dark me-1">Linux CLI</span>
-            <span class="badge bg-secondary text-dark me-1">Ubuntu</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 item python mb-4">
-        <div class="card p-4 h-100 shadow-sm offer-item">
-          <div class="d-flex align-items-center mb-3">
-            <div class="icon-wrap offer-svg me-3">
-              <svg width="32" height="32" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-                <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 1 .708 0l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L14.293 8l-3.147-3.146a.5.5 0 0 1 0-.708z"/>
-              </svg>
-            </div>
-            <h4 class="card-title mb-0">Desafío: 30 Days of Python</h4>
-          </div>
-          <p class="card-text text-muted small">Repositorio de entrenamiento continuo enfocado en la resolución de algoritmos, manejo de estructuras de datos complejas y lógica de programación en Python.</p>
-          <div class="mt-auto pt-3">
-            <span class="badge bg-secondary text-dark me-1">Python</span>
-            <span class="badge bg-secondary text-dark me-1">Algoritmos</span>
-            <span class="badge bg-secondary text-dark me-1">Git</span>
-          </div>
-        </div>
-      </div>
-
+  <div class="preloader">
+    <div class="spinner-border text-danger" role="status">
+      <span class="visually-hidden">Loading...</span>
     </div>
   </div>
-</section>
 
-        <!-- ========================================== -->
-        <!--                  CONTACTO                  -->
-        <!-- ========================================== -->
-        <section id="contact" class="contact-section target-section">
-            <div class="container">
-                <h2>Contacto</h2>
-                <p>¿Tienes un proyecto en mente o quieres conectar profesionalmente?</p>
-                <a href="mailto:tu-correo@email.com" class="btn-contact">Escríbeme por Correo</a>
+  <nav id="header-nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top bg-opacity-50 padding-small">
+    <div class="container">
+      <a class="navbar-brand text-uppercase" href="#">Matias<span class="text-danger">.Dev</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+          <li class="nav-item me-4">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#about">Sobre Mí</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#portfolio">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="bg-dark text-white padding-large" style="background-image: url('images/background1.jpg'); background-size: cover; background-position: center; min-height: 100vh; display: flex; align-items: center;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h5 class="text-danger text-uppercase tracking-wider mb-3">Ingeniero de Software</h5>
+          <h1 class="display-2 fw-bold text-uppercase mb-4">Claudio Matias<br>Gonzalez Ferreyra</h1>
+          <p class="lead mb-5">Desarrollando soluciones eficientes en Python y automatizando flujos en entornos Linux.</p>
+          <a href="#portfolio" class="btn btn-danger btn-lg me-3">Ver Proyectos</a>
+          <a href="#contact" class="btn btn-outline-light btn-lg">Contactar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio-position padding-medium bg-light">
+    <div class="container">
+      <div class="row section-title justify-content-center text-center mb-5">
+        <div class="col-md-8 col-sm-12">
+          <h2 class="display-5 text-uppercase mb-4">Mi Portafolio</h2>
+          <p class="text-muted">Proyectos reales alineados con mi experiencia técnica y enfoque de ingeniería.</p>
+        </div>
+      </div>
+
+      <div class="row filter-button-group text-center mb-5">
+        <div class="col-md-12">
+          <button class="filter-button active" data-filter="*">Todos los Proyectos</button>
+          <button class="filter-button" data-filter=".python">Python</button>
+          <button class="filter-button" data-filter=".linux">Linux / Bash</button>
+        </div>
+      </div>
+
+      <div class="row isotope-container justify-content-center">
+        
+        <div class="col-md-4 col-sm-6 item python mb-4">
+          <div class="card p-4 h-100 shadow-sm offer-item">
+            <div class="d-flex align-items-center mb-3">
+              <div class="icon-wrap offer-svg me-3">
+                <svg width="32" height="32" fill="currentColor" class="bi bi-wallet2 text-danger" viewBox="0 0 16 16">
+                  <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                </svg>
+              </div>
+              <h4 class="card-title mb-0 fs-5 fw-bold">Gestor de Cuentas</h4>
             </div>
-        </section>
+            <p class="card-text text-muted small">Aplicación desarrollada en Python enfocada en la gestión de flujos de efectivo, control de presupuestos y automatización de saldos con persistencia de datos.</p>
+            <div class="mt-auto pt-3">
+              <span class="badge bg-dark text-white me-1">Python</span>
+              <span class="badge bg-secondary text-dark me-1">SQLite</span>
+            </div>
+          </div>
+        </div>
 
-    </main>
+        <div class="col-md-4 col-sm-6 item linux mb-4">
+          <div class="card p-4 h-100 shadow-sm offer-item">
+            <div class="d-flex align-items-center mb-3">
+              <div class="icon-wrap offer-svg me-3">
+                <svg width="32" height="32" fill="currentColor" class="bi bi-terminal text-danger" viewBox="0 0 16 16">
+                  <path d="M6 5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 5ZM5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5A.5.5 0 0 1 5 8Zm-1 3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 4 11Z"/>
+                  <path d="M1 2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2H3a2 2 0 0 1 -2 -2V2Zm1 0v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1 -1V2a1 1 0 0 0 -1 -1H3a1 1 0 0 0 -1 1Z"/>
+                </svg>
+              </div>
+              <h4 class="card-title mb-0 fs-5 fw-bold">Ubuntu Automation</h4>
+            </div>
+            <p class="card-text text-muted small">Script en Bash que automatiza el despliegue del entorno local en instalaciones limpias de Ubuntu. Actualiza repositorios e instala herramientas esenciales (VS Code, Sublime Text, Firefox) mediante CLI.</p>
+            <div class="mt-auto pt-3">
+              <span class="badge bg-dark text-white me-1">Bash</span>
+              <span class="badge bg-secondary text-dark me-1">Linux CLI</span>
+              <span class="badge bg-secondary text-dark me-1">Ubuntu</span>
+            </div>
+          </div>
+        </div>
 
-    <!-- Footer simple -->
-    <footer id="footer">
-        <p>&copy; 2026 Claudio Matias Gonzalez Ferreyra. Todos los derechos reservados.</p>
-    </footer>
+        <div class="col-md-4 col-sm-6 item python mb-4">
+          <div class="card p-4 h-100 shadow-sm offer-item">
+            <div class="d-flex align-items-center mb-3">
+              <div class="icon-wrap offer-svg me-3">
+                <svg width="32" height="32" fill="currentColor" class="bi bi-code-slash text-danger" viewBox="0 0 16 16">
+                  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 1 .708 0l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L14.293 8l-3.147-3.146a.5.5 0 0 1 0-.708z"/>
+                </svg>
+              </div>
+              <h4 class="card-title mb-0 fs-5 fw-bold">30 Days of Python</h4>
+            </div>
+            <p class="card-text text-muted small">Repositorio de entrenamiento continuo y resolución de problemas algorítmicos enfocado en dominar estructuras de datos avanzadas y lógica de programación.</p>
+            <div class="mt-auto pt-3">
+              <span class="badge bg-dark text-white me-1">Python</span>
+              <span class="badge bg-secondary text-dark me-1">Algoritmos</span>
+              <span class="badge bg-secondary text-dark me-1">Git</span>
+            </div>
+          </div>
+        </div>
 
-    <!-- Tus scripts de JS al final -->
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/script.js"></script>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="padding-medium text-white bg-dark" style="background-image: url('images/background1.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-md-8">
+          <h2 class="display-5 text-uppercase mb-3">Contacto</h2>
+          <p class="text-light">¿Tienes algún proyecto en mente o una propuesta laboral? ¡Hablemos!</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+          <a href="mailto:tu-correo@email.com" class="btn btn-danger btn-lg text-uppercase px-5">Enviar un Correo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-4 border-top border-secondary">
+    <p class="mb-0 small">&copy; 2026 Claudio Matias. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="plugins/plugins.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 </html>
