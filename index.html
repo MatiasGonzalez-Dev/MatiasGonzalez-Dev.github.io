@@ -1,754 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claudio Matias | Software Engineer</title>
-
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-    <!--Bootstrap ================================================== -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
-    <!--vendor css ================================================== -->
-    <link rel="stylesheet" type="text/css" href="css/vendor.css">
-
-    <!-- Style Sheet ================================================== -->
+    <title>Claudio Matias Gonzalez Ferreyra | Portafolio</title>
+    <!-- Aquí van tus enlaces de fuentes y Swiper CSS -->
+    <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-
-    <!-- Google Fonts ================================================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
 </head>
-
 <body>
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-        <symbol id="facebook" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
-        </symbol>
-        <symbol id="twitter" viewBox="0 0 16 16">
-            <path fill="currentColor"
-                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518a3.3 3.3 0 0 0 1.447-1.817a6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429a3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218a3.2 3.2 0 0 1-.865.115a3 3 0 0 1-.614-.057a3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
-        </symbol>
-        <symbol id="instagram" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a79 79 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465l-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78 78 0 0 1-2.189-.023l-.194-.006a63 63 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.9 4.9 0 0 1-1.771-1.153a4.9 4.9 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428l-.03-.712l-.005-.194A79 79 0 0 1 2 13.028v-2.056a79 79 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.9 4.9 0 0 1 3.68 3.678a4.9 4.9 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5" />
-        </symbol>
-        <symbol id="pinterest" viewBox="0 0 24 24">
-            <g fill="none">
-                <path
-                    d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                <path fill="currentColor"
-                    d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12c0 4.006 2.356 7.462 5.758 9.058l2.29-10.766a1 1 0 0 1 1.956.416C11.73 12 11.49 12.5 11.501 13.1c.017.94.273 1.442.521 1.702c.253.265.618.408 1.095.4c.487-.01 1.038-.181 1.526-.489C15.592 14.117 16 13.095 16 12a4 4 0 1 0-7.668 1.6a1 1 0 0 1-1.832.8a6 6 0 1 1 11 0c-.368.848-1.04 1.534-1.792 2.007c-.755.475-1.657.779-2.555.795c-.819.015-1.672-.212-2.359-.808L9.66 21.726c.75.18 1.534.275 2.339.275Z" />
-            </g>
-        </symbol>
-        <symbol id="youtube" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73" />
-        </symbol>
-        <symbol id="paintbrush" viewBox="0 0 16 16">
-            <path fill="currentColor"
-                d="m5.6 11.6l-1.2-1.2c-.8-.2-2-.1-2.7 1c-.8 1.1-.3 2.8-1.7 4.6c0 0 3.5 0 4.8-1.3c1.2-1.2 1.2-2.2 1-3zm.2-3.5c-.2.3-.5.7-.7 1c0 .2-.1.3-.2.4L6.4 11c.1-.1.3-.2.4-.3c.3-.2.7-.4 1-.7c.4 0 .6-.2.8-.4L6.4 7.4c-.2.2-.4.4-.6.7m10-7.9c-.3-.3-.7-.3-1-.1c0 0-3 2.5-5.9 5.1c-.4.4-.7.7-1.1 1c-.2.2-.4.4-.6.5l2.1 2.1c.2-.2.4-.4.5-.7c.3-.4.6-.7.9-1.1c2.5-3 5.1-5.9 5.1-5.9c.3-.2.3-.6 0-.9" />
-        </symbol>
-        <symbol id="t-shirt" viewBox="0 0 20 20">
-            <g fill="currentColor">
-                <path fill-rule="evenodd"
-                    d="m2.668 10.009l1.166-.583V16.5a2.5 2.5 0 0 0 2.5 2.5h7.335a2.5 2.5 0 0 0 2.5-2.5V9.425l1.166.581a.5.5 0 0 0 .71-.338l.945-4.236a.5.5 0 0 0-.135-.463l-2.248-2.24A2.5 2.5 0 0 0 14.842 2h-2.007a.5.5 0 0 0-.493.415c-.287 1.658-1.04 2.409-2.342 2.409c-1.3 0-2.054-.751-2.34-2.409A.5.5 0 0 0 7.167 2H5.161a2.5 2.5 0 0 0-1.766.73L1.15 4.97a.5.5 0 0 0-.135.462l.943 4.238a.5.5 0 0 0 .711.338M5.161 3h1.598C7.195 4.84 8.297 5.824 10 5.824S12.806 4.84 13.243 3h1.6a1.5 1.5 0 0 1 1.058.437l2.053 2.046l-.745 3.343l-1.317-.656a.5.5 0 0 0-.723.448V16.5a1.5 1.5 0 0 1-1.5 1.5H6.334a1.5 1.5 0 0 1-1.5-1.5V8.618a.5.5 0 0 0-.724-.448l-1.316.658l-.744-3.345l2.051-2.045A1.5 1.5 0 0 1 5.161 3"
-                    clip-rule="evenodd" />
-                <path d="M12 10.5a.5.5 0 0 1 0-1h2a.5.5 0 0 1 0 1z" />
-            </g>
-        </symbol>
-        <symbol id="box" viewBox="0 0 24 24">
-            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"
-                d="m15.578 3.382l2 1.05c2.151 1.129 3.227 1.693 3.825 2.708C22 8.154 22 9.417 22 11.942v.117c0 2.524 0 3.787-.597 4.801c-.598 1.015-1.674 1.58-3.825 2.709l-2 1.049C13.822 21.539 12.944 22 12 22s-1.822-.46-3.578-1.382l-2-1.05c-2.151-1.129-3.227-1.693-3.825-2.708C2 15.846 2 14.583 2 12.06v-.117c0-2.525 0-3.788.597-4.802c.598-1.015 1.674-1.58 3.825-2.708l2-1.05C10.178 2.461 11.056 2 12 2s1.822.46 3.578 1.382ZM21 7.5l-4 2M12 12L3 7.5m9 4.5v9.5m0-9.5l4.5-2.25l.5-.25m0 0V13m0-3.5l-9.5-5" />
-        </symbol>
-        <symbol id="arrow-left" viewBox="0 0 256 256">
-            <path fill="currentColor"
-                d="M220 128a4 4 0 0 1-4 4H49.66l65.17 65.17a4 4 0 0 1-5.66 5.66l-72-72a4 4 0 0 1 0-5.66l72-72a4 4 0 0 1 5.66 5.66L49.66 124H216a4 4 0 0 1 4 4" />
-        </symbol>
-        <symbol id="arrow-right" viewBox="0 0 256 256">
-            <path fill="currentColor"
-                d="m218.83 130.83l-72 72a4 4 0 0 1-5.66-5.66L206.34 132H40a4 4 0 0 1 0-8h166.34l-65.17-65.17a4 4 0 0 1 5.66-5.66l72 72a4 4 0 0 1 0 5.66" />
-        </symbol>
-        <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-            <path fill="currentColor"
-                d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3zm0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8z" />
-        </symbol>
-        <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 16 16">
-            <path
-                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
-        </symbol>
-    </svg>
 
-    <div class="preloader text-white fs-6 text-uppercase overflow-hidden"></div>
-
-    <div class="search-popup">
-        <div class="search-popup-container">
-
-            <form role="search" method="get" class="form-group" action="index.html">
-                <input type="search" id="search-form" class="form-control border-0 border-bottom"
-                    placeholder="Type and press enter" value="" name="s">
-                <button type="submit" class="search-submit border-0 position-absolute bg-white"
-                    style="top: 15px;right: 15px;"><svg class="search" width="24" height="24">
-                        <use xlink:href="#search"></use>
-                    </svg></button>
-            </form>
-
-            <h5 class="cat-list-title">Browse Categories</h5>
-
-            <ul class="cat-list">
-                <li class="cat-list-item">
-                    <a href="#" title="Self Love">Self Love</a>
-                </li>
-                <li class="cat-list-item">
-                    <a href="#" title="Relationships">Relationships</a>
-                </li>
-                <li class="cat-list-item">
-                    <a href="#" title="Skin Care">Skin Care</a>
-                </li>
-                <li class="cat-list-item">
-                    <a href="#" title="Health">Health</a>
-                </li>
-                <li class="cat-list-item">
-                    <a href="#" title="Spa">Spa</a>
-                </li>
-                <li class="cat-list-item">
-                    <a href="#" title="Friendship">Friendship</a>
-                </li>
-                <li class="cat-list-item">
-                    <a href="#" title="Healing">Healing</a>
-                </li>
-            </ul>
-
-        </div>
-    </div>
-
-
-<nav id="header-nav" class="navbar navbar-expand-lg container-fluid bg-white bg-opacity-50 py-4 fixed-top">
-        <div class="container">
-            <!-- Cambiamos el logo de imagen por texto limpio -->
-            <a class="navbar-brand fw-bold fs-3 text-dark" href="index.html">Matías Gonzalez<span class="text-primary">.</span></a>
-
-            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-                    <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav text-center align-items-center justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active pe-lg-5" aria-current="page" href="#hero">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pe-lg-5" href="#hire">Habilidades</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pe-lg-5" href="#offer">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pe-lg-5" href="#portfolio">Portafolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pe-lg-5" href="#contact">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <section id="hero" class="padding-large jarallax">
-    <div class="container" data-aos="fade-up">
-        <div class="row text-start">
-            <div class="col-lg-6">
-                <p class="text-uppercase tracking-wider fw-semibold text-secondary">
-                    Software Engineer
-                </p>
-                <h2 class="display-1 fw-bold">
-                    Hola, soy <span class="text-primary">Claudio Matías</span>
-                </h2>
-                <p class="lead mt-3 text-dark fw-medium" style="text-shadow: 1px 1px 2px rgba(255,255,255,0.8);">
-                    Ingeniero de Software enfocado en la automatización de infraestructura, optimización de sistemas y el desarrollo de lógica robusta para transformar tareas manuales en flujos de trabajo eficientes.
-                </p>
-                <a href="#contact" class="btn btn-outline-dark rounded-pill mt-4">
-                    Contáctame
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Tip: Puedes cambiar la imagen de fondo por una de código o una textura oscura en la carpeta images/ -->
-<!-- =================================================================
-        FOTO DE PERFIL 
-        - Actualmente la imagen original está comentada para que no se muestre.
-        - Cuando tengas tu foto lista, guárdala en la carpeta 'images/', 
-        descomenta la línea de abajo y cambia 'tu-foto.jpg' por el nombre de tu archivo.
-    ================================================================== -->
-    <img src="images/michi3.webp" alt="Claudio Matias" class="jarallax-img">
-</section>
-</section>
-
-<section id="hire" class="bg-light">
-    <div class="container padding-medium">
-        <div class="row flex-row-reverse align-items-center">
-            
-            <div class="offset-lg-1 col-lg-6" data-aos="fade-left">
-                <h3 class="display-5 fw-bold mb-4">
-                    Mi Stack Técnico
-                </h3>
-                <p class="text-muted mb-4">
-                    Tecnologías y herramientas clave que utilizo para construir e integrar sistemas eficientes:
-                </p>
-                
-                <div class="row g-3">
-                    <div class="col-sm-6">
-                        <div class="p-3 bg-white rounded-3 border border-dark-subtle d-flex align-items-center gap-3">
-                            <iconify-icon icon="logos:python" width="32" height="32"></iconify-icon>
-                            <div>
-                                <h6 class="fw-bold mb-0">Python Core</h6>
-                                <small class="text-muted">Lógica y Automatización</small>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-6">
-                        <div class="p-3 bg-white rounded-3 border border-dark-subtle d-flex align-items-center gap-3">
-                            <iconify-icon icon="logos:linux-tux" width="32" height="32"></iconify-icon>
-                            <div>
-                                <h6 class="fw-bold mb-0">Linux / Ubuntu</h6>
-                                <small class="text-muted">Entornos y CLI</small>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-6">
-                        <div class="p-3 bg-white rounded-3 border border-dark-subtle d-flex align-items-center gap-3">
-                            <iconify-icon icon="logos:git-icon" width="32" height="32"></iconify-icon>
-                            <div>
-                                <h6 class="fw-bold mb-0">Git & GitHub</h6>
-                                <small class="text-muted">Control de Versiones</small>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-6">
-                        <div class="p-3 bg-white rounded-3 border border-dark-subtle d-flex align-items-center gap-3">
-                            <iconify-icon icon="logos:postgresql" width="32" height="32"></iconify-icon>
-                            <div>
-                                <h6 class="fw-bold mb-0">Bases de Datos</h6>
-                                <small class="text-muted">SQL & Persistencia</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="p-3 bg-white rounded-3 border border-dark-subtle d-flex align-items-center gap-3">
-                            <iconify-icon icon="logos:docker-icon" width="32" height="32"></iconify-icon>
-                            <div>
-                                <h6 class="fw-bold mb-0">Docker</h6>
-                                <small class="text-muted">Contenedores e Infraestructura</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="p-3 bg-white rounded-3 border border-dark-subtle d-flex align-items-center gap-3">
-                            <iconify-icon icon="carbon:gui" width="32" height="32" class="text-primary"></iconify-icon>
-                            <div>
-                                <h6 class="fw-bold mb-0">Flet</h6>
-                                <small class="text-muted">Interfaces de Escritorio</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-5 mt-5 mt-lg-0" data-aos="fade-right">
-                <h3 class="display-5 fw-bold">
-                    ¿Por qué trabajar conmigo?
-                </h3>
-                <p class="pt-3 text-muted">
-                    Me enfoco en construir software estable y automatizar flujos de trabajo operativos. Mi objetivo es desarrollar scripts robustos, optimizar tareas del sistema en segundo plano y asegurar que las aplicaciones interactúen de forma limpia con bases de datos y entornos aislados.
-                </p>
-                <p class="text-muted">
-                    Sigo un plan de desarrollo riguroso centrado en la arquitectura de backend, la gestión de servidores Linux y el empaquetado de servicios con estándares modernos como Docker.
-                </p>
-                <div class="text-start mt-4">
-                    <a href="#contact" class="btn btn-dark me-3 rounded-pill px-4">
-                        Hablemos
-                    </a>
-                    <a href="CV_Matias_Gonzalez.pdf" download="CV_Matias_Gonzalez.pdf" class="btn btn-outline-dark rounded-pill px-4">
-                        Descargar CV
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section id="offer" class="position-relative padding-medium" data-aos="fade-up">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-7 text-center">
-                <h3 class="display-5 fw-bold">
-                    Lo Que Ofrezco
-                </h3>
-                <p class="mb-5 text-muted">
-                    Soluciones de software alineadas con la estabilidad, la optimización de servidores y la eficiencia de procesos.
-                </p>
-            </div>
-        </div>
-
-        <div class="swiper offer-swiper">
-            <div class="swiper-wrapper">
-                
-                <!-- Servicio 1: Basado en Fase 1 y Fase 2 del Roadmap -->
-                <div class="swiper-slide text-center">
-                    <div class="offer-item border mb-4 p-5 rounded-3 bg-white">
-                        <div class="product-item position-relative">
-                            <!-- Icono de Terminal/Código -->
-                            <svg class="offer-svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="4 17 10 11 4 5" />
-                                <line x1="12" y1="19" x2="20" y2="19" />
-                            </svg>
-                        </div>
-                        <h4 class="mt-4 fw-bold">Scripts & Automatización Linux</h4>
-                        <p class="text-muted mt-3">
-                            Desarrollo scripts robustos en Python ejecutados nativamente en entornos Ubuntu/Linux. Programación de tareas en segundo plano mediante Cron para manipulación automatizada de archivos, análisis de logs y reportes automáticos.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Servicio 2: Basado en Fase 2 y Fase 3 del Roadmap -->
-                <div class="swiper-slide text-center">
-                    <div class="offer-item border mb-4 p-5 rounded-3 bg-white">
-                        <div class="product-item position-relative">
-                            <!-- Icono de Servidor/Contenedor -->
-                            <svg class="offer-svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
-                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
-                                <line x1="6" y1="6" x2="6.01" y2="6" />
-                                <line x1="6" y1="18" x2="6.01" y2="18" />
-                            </svg>
-                        </div>
-                        <h4 class="mt-4 fw-bold">Contenedores & Modelado de Datos</h4>
-                        <p class="text-muted mt-3">
-                            Diseño y despliegue de arquitecturas locales ligeras utilizando Docker y Docker Compose. Persistencia y aislamiento de datos estructurados mediante el modelado y la conexión eficiente con bases de datos relacionales SQL.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Servicio 3: Basado en Fase 3 (Flet) y proyectos reales -->
-                <div class="swiper-slide text-center">
-                    <div class="offer-item border mb-4 p-5 rounded-3 bg-white">
-                        <div class="product-item position-relative">
-                            <!-- Icono de Monitor/Layout -->
-                            <svg class="offer-svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                                <line x1="3" y1="9" x2="21" y2="9" />
-                                <line x1="9" y1="21" x2="9" y2="9" />
-                            </svg>
-                        </div>
-                        <h4 class="mt-4 fw-bold">Interfaces de Usuario Dinámicas</h4>
-                        <p class="text-muted mt-3">
-                            Construcción de páneles interactivos y aplicaciones de escritorio utilizando Flet. Transformo scripts de consola complejos en herramientas visuales accesibles y amigables para el usuario final o personal operativo.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="swiper-pagination position-static mt-4 d-lg-none d-block"></div>
+    <!-- ========================================== -->
+    <!--             MENÚ DE NAVEGACIÓN             -->
+    <!-- ========================================== -->
+    <header id="header" class="grid-header">
+        <div class="header-wrap_left">
+            <a href="index.html" class="logo-brand">CMGF</a>
         </div>
         
-        <!-- Flechas de navegación del Swiper -->
-        <div class="position-absolute top-50 end-0 translate-middle-y me-5 mt-5 pt-5 main-slider-button-next d-lg-block d-none">
-            <svg class="arrow" width="80" height="80"><use xlink:href="#arrow-right"></use></svg>
-        </div>
-        <div class="position-absolute top-50 start-0 translate-middle-y ms-5 mt-5 pt-5 main-slider-button-prev d-lg-block d-none">
-            <svg class="arrow" width="80" height="80"><use xlink:href="#arrow-left"></use></svg>
-        </div>
-    </div>
-</section>
-
- <section id="portfolio" class="padding-medium container-fluid pt-0" data-aos="fade-up">
-    <div class="text-center">
-        <h3 class="display-5 fw-bold">Mi Portafolio</h3>
-        <p class="text-muted max-w-md mx-auto mt-2">
-            Construyendo soluciones reales paso a paso. Actualmente desarrollando los proyectos de validación de mi roadmap de ingeniería.
-        </p>
-        <div class="my-4">
-            <p>
-                <button class="filter-button px-3 mb-3 active" data-filter="*">Todos los Proyectos</button>
-            </p>
-        </div>
-    </div>
-    
-    <div class="container">
-        <div class="row justify-content-center g-4">
-            
-            <!-- Proyecto 1 (Fase 1) -->
-            <div class="col-md-4">
-                <div class="card h-100 border border-dark-subtle bg-light position-relative overflow-hidden shadow-sm">
-                    <!-- Badge de Estado -->
-                    <span class="position-absolute top-0 end-0 bg-warning text-dark fw-bold px-3 py-1 small rounded-bl" style="border-bottom-left-radius: 8px; font-size: 0.75rem;">
-                        ⚡ EN DESARROLLO
-                    </span>
-                    <div class="card-body p-4 mt-3">
-                        <div class="text-primary mb-2">
-                            <iconify-icon icon="mdi:folder-zip" width="32" height="32"></iconify-icon>
-                        </div>
-                        <h5 class="card-title fw-bold text-dark">Organizador Automatizado de Servidor</h5>
-                        <p class="card-text text-muted small mt-2">
-                            Script en Python diseñado para entornos Linux que automatiza la lectura, clasificación y compresión de archivos de logs viejos para optimizar el espacio en disco.
-                        </p>
-                        <div class="mt-3">
-                            <span class="badge bg-secondary-subtle text-dark border small">Python</span>
-                            <span class="badge bg-secondary-subtle text-dark border small">Linux CLI</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Proyecto 2 (Fase 2) -->
-            <div class="col-md-4">
-                <div class="card h-100 border border-dark-subtle bg-light position-relative overflow-hidden shadow-sm opacity-75">
-                    <span class="position-absolute top-0 end-0 bg-dark text-white fw-bold px-3 py-1 small" style="border-bottom-left-radius: 8px; font-size: 0.75rem;">
-                        ⏳ PRÓXIMAMENTE
-                    </span>
-                    <div class="card-body p-4 mt-3">
-                        <div class="text-secondary mb-2">
-                            <iconify-icon icon="mdi:server-network" width="32" height="32"></iconify-icon>
-                        </div>
-                        <h5 class="card-title fw-bold text-muted">Monitor de Conectividad Automatizado</h5>
-                        <p class="card-text text-muted small mt-2">
-                            Sistema de diagnóstico de red programado con Cron. Evaluará el estado de servicios externos mediante peticiones HTTP y almacenará la persistencia en bases de datos SQL.
-                        </p>
-                        <div class="mt-3">
-                            <span class="badge bg-secondary-subtle text-muted border small">PostgreSQL</span>
-                            <span class="badge bg-secondary-subtle text-muted border small">Cron</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Proyecto 3 (Fase 3) -->
-            <div class="col-md-4">
-                <div class="card h-100 border border-dark-subtle bg-light position-relative overflow-hidden shadow-sm opacity-75">
-                    <span class="position-absolute top-0 end-0 bg-dark text-white fw-bold px-3 py-1 small" style="border-bottom-left-radius: 8px; font-size: 0.75rem;">
-                        ⏳ PRÓXIMAMENTE
-                    </span>
-                    <div class="card-body p-4 mt-3">
-                        <div class="text-secondary mb-2">
-                            <iconify-icon icon="mdi:docker" width="32" height="32"></iconify-icon>
-                        </div>
-                        <h5 class="card-title fw-bold text-muted">Dashboard del Administrador (Flet)</h5>
-                        <p class="card-text text-muted small mt-2">
-                            Interfaz gráfica de usuario construida con Flet para visualizar métricas de red. Todo el entorno (base de datos y app) se desplegará de forma aislada usando Docker Compose.
-                        </p>
-                        <div class="mt-3">
-                            <span class="badge bg-secondary-subtle text-muted border small">Docker</span>
-                            <span class="badge bg-secondary-subtle text-muted border small">Flet (GUI)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!--
-    <section id="brands" class="bg-light padding-medium">
-        <div class="container" data-aos="fade-up">
-            <div class="row justify-content-center">
-                <div class="col-md-5 text-center">
-                    <h3 class="display-5 fw-bold">
-                        Brands I’ve Worked
-                    </h3>
-                    <p class="mb-5">
-                        Things that I can do for my clients. Just make your good trust I love to provide quality works.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-2 my-5 text-center">
-                    <a href="#"> <img src="images/brand1.png" alt="brands" class="brand-img img-fluid"> </a>
-                </div>
-                <div class="col-2 my-5 text-center">
-                    <a href="#"> <img src="images/brand2.png" alt="brands" class="brand-img img-fluid"> </a>
-                </div>
-                <div class="col-2 my-5 text-center">
-                    <a href="#"> <img src="images/brand3.png" alt="brands" class="brand-img img-fluid"> </a>
-                </div>
-                <div class="col-2 my-5 text-center">
-                    <a href="#"> <img src="images/brand4.png" alt="brands" class="brand-img img-fluid"> </a>
-                </div>
-                <div class="col-2 my-5 text-center">
-                    <a href="#"> <img src="images/brand5.png" alt="brands" class="brand-img img-fluid"> </a>
-                </div>
-                <div class="col-2 my-5 text-center">
-                    <a href="#"> <img src="images/brand6.png" alt="brands" class="brand-img img-fluid"> </a>
-                </div>
-                <div class="col-2 my-5 text-center">
-                    <a href="#"> <img src="images/brand7.png" alt="brands" class="brand-img img-fluid"> </a>
-                </div>
-                <div class="col-2 my-5 text-center">
-                    <a href="#"> <img src="images/brand8.png" alt="brands" class="brand-img img-fluid"> </a>
-                </div>
-                <div class="col-2 my-5 text-center">
-                    <a href="#"> <img src="images/brand9.png" alt="brands" class="brand-img img-fluid"> </a>
-                </div>
-                <div class="col-2 my-5 text-center">
-                    <a href="#"> <img src="images/brand10.png" alt="brands" class="brand-img img-fluid"> </a>
-                </div>
-                <div class="col-2 my-5 text-center">
-                    <a href="#"> <img src="images/brand11.png" alt="brands" class="brand-img img-fluid"> </a>
-                </div>
-                <div class="col-2 my-5 text-center">
-                    <a href="#"> <img src="images/brand12.png" alt="brands" class="brand-img img-fluid"> </a>
-                </div>
-            </div>
-
-    </section>
-
-    <section id="testimonial" class="margin-medium mb-0 position-relative">
-        <div class="position-absolute top-50 start-0 translate-middle-y">
-            <img src="images/pattern.png" alt="pattern" class="img-fluid">
+        <div class="header-wrap_center">
+            <nav id="navbar" class="main-menu">
+                <ul class="menu-list">
+                    <li><a href="#hero" class="menu-link">Inicio</a></li>
+                    <li><a href="#about" class="menu-link">Sobre Mí</a></li>
+                    <li><a href="#projects" class="menu-link">Proyectos</a></li>
+                    <li><a href="#contact" class="menu-link">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
 
-        <div class="container text-center">
-            <div class="row justify-content-center">
-                <div class="col-md-7 position-relative padding-medium">
-                    <div class="position-absolute top-0 start-0">
-                        <img src="images/quote.png" alt="pattern" class="img-fluid">
-                    </div>
-                    <div class="swiper testimonial-swiper" data-aos="fade-up">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide text-start">
-                                <div class="testimonial-details">
-                                    <p class="fs-2 text-dark lh-base fst-italic">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapibus eu placerat at
-                                        nisl posuere aliquet amet pharetra malesuada. Suspendisse nisl ac at tortor.
-                                    </p>
-                                    <div class="d-flex flex-wrap align-items-center">
-                                        <img src="images/commentor1.jpg" alt="img" class="img-fluid">
-                                        <div class="ms-2">
-                                            <h6 class="m-0">Emma Brown</h6>
-                                            <p class="m-0">CEO - Squirrel Sweets</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide text-start">
-                                <div class="testimonial-details">
-                                    <p class="fs-2 text-dark lh-base fst-italic">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapibus eu placerat at
-                                        nisl posuere aliquet amet pharetra malesuada. Suspendisse nisl ac at tortor.
-                                    </p>
-                                    <div class="d-flex flex-wrap align-items-center">
-                                        <img src="images/commentor1.jpg" alt="img" class="img-fluid">
-                                        <div class="ms-2">
-                                            <h6 class="m-0">Emma Brown</h6>
-                                            <p class="m-0">CEO - Squirrel Sweets</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide text-start">
-                                <div class="testimonial-details">
-                                    <p class="fs-2 text-dark lh-base fst-italic">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapibus eu placerat at
-                                        nisl posuere aliquet amet pharetra malesuada. Suspendisse nisl ac at tortor.
-                                    </p>
-                                    <div class="d-flex flex-wrap align-items-center">
-                                        <img src="images/commentor1.jpg" alt="img" class="img-fluid">
-                                        <div class="ms-2">
-                                            <h6 class="m-0">Emma Brown</h6>
-                                            <p class="m-0">CEO - Squirrel Sweets</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination position-static mt-4 text-start"></div>
-                    </div>
-                </div>
+        <div class="header-wrap_right">
+            <!-- Se mantiene limpio, sin el botón de búsqueda innecesario -->
+            <div class="social-networks">
+                <a href="https://github.com" target="_blank">GitHub</a>
             </div>
         </div>
-    </section>
+    </header>
 
-    <section id="blog" class="pt-0 padding-medium">
-        <div class="container" data-aos="fade-up">
-            <div class="row justify-content-center">
-                <div class="col-md-5 text-center">
-                    <h3 class="display-5 fw-bold">
-                        Blog Posts
-                    </h3>
-                    <p class="mb-5">
-                        Things that I can do for my clients. Just make your good trust I love to provide quality works.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="blog-post">
-                        <div class="image-zoom rounded-3">
-                            <a href="single-post.html" class="blog-img"><img src="images/blog1.png" alt="img"
-                                    class="img-fluid"></a>
-                        </div>
-                        <h4 class="py-3"><a href="single-post.html" class="blog-link">Why should we invest more in
-                                branding first?</a></h4>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="blog-post">
-                        <div class="image-zoom rounded-3">
-                            <a href="single-post.html" class="blog-img"><img src="images/blog2.png" alt="img"
-                                    class="img-fluid"></a>
-                        </div>
-                        <h4 class="py-3"><a href="single-post.html" class="blog-link">Top 100 most beautiful t-shirt
-                                print design</a></h4>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="blog-post">
-                        <div class="image-zoom rounded-3">
-                            <a href="single-post.html" class="blog-img"><img src="images/blog3.png" alt="img"
-                                    class="img-fluid"></a>
-                        </div>
-                        <h4 class="py-3"><a href="single-post.html" class="blog-link">Best rules to follow for achieving
-                                business goals</a></h4>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-5">
-                <a href="#" class="btn btn-dark me-4">
-                    Read All Blogs
-                </a>
-            </div>
-        </div>
-    </section>
--->
-    <!--
-    <section id="achievements" class="padding-medium bg-light">
-        <div class="process-content container" data-aos="fade-up">
-            <div class="row justify-content-center text-center text-md-start g-4">
-                <div class="col-lg-3 col-6 text-center">
-                    <h4 class="display-1 fw-bold text-black-50">720+</h4>
-                    <p class="fw-bold text-dark mb-0">Projects Completed</p>
-                </div>
-                <div class="col-lg-3 col-6 text-center">
-                    <h4 class="display-1 fw-bold text-black-50">920+</h4>
-                    <p class="fw-bold text-dark mb-0">Products Sold</p>
-                </div>
-                <div class="col-lg-3 col-6 text-center">
-                    <h4 class="display-1 fw-bold text-black-50">25+</h4>
-                    <p class="fw-bold text-dark mb-0">Awards Received</p>
-                </div>
-                <div class="col-lg-3 col-6 text-center">
-                    <h4 class="display-1 fw-bold text-black-50">700+</h4>
-                    <p class="fw-bold text-dark mb-0">Happy Clients</p>
-                </div>
-            </div>
-        </div>
-    </section>
--->
-<section id="achievements" class="padding-medium bg-light border-top border-bottom">
-        <div class="container" data-aos="fade-up">
-            <div class="row justify-content-center text-center g-4">
-                <div class="col-md-4">
-                    <h4 class="display-3 fw-bold text-dark mb-1">100%</h4>
-                    <p class="text-muted text-uppercase small tracking-wider">Enfoque en Automatización</p>
-                </div>
-                <div class="col-md-4">
-                    <h4 class="display-3 fw-bold text-dark mb-1">Linux</h4>
-                    <p class="text-muted text-uppercase small tracking-wider">Entorno de Desarrollo Base</p>
-                </div>
-                <div class="col-md-4">
-                    <h4 class="display-3 fw-bold text-dark mb-1">Git</h4>
-                    <p class="text-muted text-uppercase small tracking-wider">Control de Versiones Activo</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<section id="contact">
-        <div class="container padding-medium" data-aos="fade-up">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <h3 class="display-1 fw-bold">
-                        Creemos algo juntos
-                    </h3>
-                    <p class="lead mt-3">
-                        Estoy disponible para integrarme a equipos de desarrollo o colaborar en proyectos de automatización de software. <br>
-                        Si tienes una idea o un problema lógico que resolver, no dudes en escribirme.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Redes profesionales: GitHub y LinkedIn -->
-            <ul class="d-flex gap-5 list-unstyled justify-content-center my-4">
-                <li>
-                    <a class="nav-link p-0" href="https://github.com/MatiasGonzalez-Dev" target="_blank" title="GitHub">
-                        <!-- Icono de GitHub usando Iconify -->
-                        <iconify-icon icon="mdi:github" width="40" height="40" class="accent-color"></iconify-icon>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link p-0" href="https://www.linkedin.com/in/matiasgonzalez-/" target="_blank" title="LinkedIn">
-                        <!-- Icono de LinkedIn usando Iconify -->
-                        <iconify-icon icon="mdi:linkedin" width="40" height="40" class="accent-color"></iconify-icon>
-                    </a>
-                </li>
-            </ul>
-
-            <div class="text-center mt-5">
-                <a href="mailto:c.matias.ferreyra@gmail.com" class="btn btn-outline-dark rounded-pill px-5 py-3 fw-bold">                    Enviar un Correo
-                </a>
-            </div>
-        </div>
+    <main class="main-content">
         
-        <!-- Footer limpio -->
-        <footer class="border-top border-dark-subtle py-4">
-            <div class="container d-md-flex justify-content-between align-items-center mt-3">
-                <p class="mb-0">© 2026 Claudio Matias Gonzalez Ferreyra. Todos los derechos reservados.</p>
-                <p class="mb-0 text-muted small">Template base por: <a href="https://templatesjungle.com/" target="_blank" class="text-decoration-underline text-muted">TemplatesJungle</a></p>
+        <!-- ========================================== -->
+        <!--                SECCIÓN HERO                -->
+        <!-- ========================================== -->
+        <section id="hero" class="hero-section target-section">
+            <div class="hero-content">
+                <span class="category-tag">Ingeniero de Software</span>
+                <h1 class="hero-title">Desarrollo Backend & Automatización</h1>
+                <p class="hero-description">
+                    Especializado en crear soluciones eficientes con Python, entornos Linux y optimización de procesos mediante Docker.
+                </p>
+                <!-- Ojo aquí: Cambia el michi por tu foto cuando la tengas lista, 
+                     o déjalo si quieres un easter egg de programador, jaja -->
+                <div class="hero-image-wrap">
+                    <img src="images/michi3.webp" alt="Matias Gonzalez" class="hero-img">
+                </div>
             </div>
-        </footer>
-    </section>
+        </section>
 
+        <!-- ========================================== -->
+        <!--              SOBRE MÍ (ABOUT)              -->
+        <!-- ========================================== -->
+        <section id="about" class="about-section target-section">
+            <div class="container">
+                <h2>Sobre Mí</h2>
+                <p>
+                    Apasionado por la infraestructura, el desarrollo backend y la automatización de tareas. 
+                    Me enfoco en escribir código limpio, documentado y listo para entornos de producción estables en Ubuntu.
+                </p>
+            </div>
+        </section>
 
-    <!-- script ================================================== -->
+        <!-- ========================================== -->
+        <!--             SECCIÓN PROYECTOS              -->
+        <!-- ========================================== -->
+        <section id="projects" class="projects-section target-section">
+            <div class="container">
+                <h2 class="section-title">Proyectos</h2>
+                
+                <div class="projects-grid">
+                    <!-- Tarjeta: Organizador de Tareas en Desarrollo -->
+                    <article class="project-card">
+                        <div class="project-thumb">
+                            <!-- Puedes usar un placeholder o imagen temporal -->
+                            <img src="images/project-placeholder.webp" alt="Organizador de tareas">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">En Desarrollo</span>
+                            <span class="project-tech">Python / Backend</span>
+                            <h3 class="project-title">Organizador de Tareas Automatizado</h3>
+                            <p class="project-excerpt">
+                                Sistema en desarrollo enfocado en la gestión y automatización de flujos de trabajo personales y profesionales.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta: Espacio para Futuros Proyectos o Entorno Linux -->
+                    <article class="project-card">
+                        <div class="project-thumb">
+                            <img src="images/linux-placeholder.webp" alt="Entorno de desarrollo">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Entorno</span>
+                            <span class="project-tech">Linux / Docker</span>
+                            <h3 class="project-title">Infraestructura y Configuración Local</h3>
+                            <p class="project-excerpt">
+                                Gestión de ambientes de desarrollo aislados y despliegue de contenedores optimizados para backend.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!--                  CONTACTO                  -->
+        <!-- ========================================== -->
+        <section id="contact" class="contact-section target-section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>¿Tienes un proyecto en mente o quieres conectar profesionalmente?</p>
+                <a href="mailto:tu-correo@email.com" class="btn-contact">Escríbeme por Correo</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer simple -->
+    <footer id="footer">
+        <p>&copy; 2026 Claudio Matias Gonzalez Ferreyra. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Tus scripts de JS al final -->
     <script src="js/jquery-1.11.0.min.js"></script>
-
-    <!-- Bootstarp script ================================================== -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-
-    <!-- Swiper script ================================================== -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!--iconify script ================================================== -->
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
-
-
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
 </body>
-
 </html>
