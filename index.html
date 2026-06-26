@@ -73,45 +73,85 @@
         <!-- ========================================== -->
         <!--             SECCIÓN PROYECTOS              -->
         <!-- ========================================== -->
-        <section id="projects" class="projects-section target-section">
-            <div class="container">
-                <h2 class="section-title">Proyectos</h2>
-                
-                <div class="projects-grid">
-                    <!-- Tarjeta: Organizador de Tareas en Desarrollo -->
-                    <article class="project-card">
-                        <div class="project-thumb">
-                            <!-- Puedes usar un placeholder o imagen temporal -->
-                            <img src="images/project-placeholder.webp" alt="Organizador de tareas">
-                        </div>
-                        <div class="project-info">
-                            <span class="project-tag">En Desarrollo</span>
-                            <span class="project-tech">Python / Backend</span>
-                            <h3 class="project-title">Organizador de Tareas Automatizado</h3>
-                            <p class="project-excerpt">
-                                Sistema en desarrollo enfocado en la gestión y automatización de flujos de trabajo personales y profesionales.
-                            </p>
-                        </div>
-                    </article>
+<section id="portfolio" class="portfolio-position padding-medium">
+  <div class="container">
+    <div class="row section-title justify-content-center text-center">
+      <div class="col-md-8 col-sm-12">
+        <h2 class="display-5 text-uppercase mb-4">Mi Portafolio</h2>
+        <p>Construyendo soluciones reales paso a paso. Actualmente desarrollando y validando proyectos clave en mi roadmap de ingeniería.</p>
+      </div>
+    </div>
 
-                    <!-- Tarjeta: Espacio para Futuros Proyectos o Entorno Linux -->
-                    <article class="project-card">
-                        <div class="project-thumb">
-                            <img src="images/linux-placeholder.webp" alt="Entorno de desarrollo">
-                        </div>
-                        <div class="project-info">
-                            <span class="project-tag">Entorno</span>
-                            <span class="project-tech">Linux / Docker</span>
-                            <h3 class="project-title">Infraestructura y Configuración Local</h3>
-                            <p class="project-excerpt">
-                                Gestión de ambientes de desarrollo aislados y despliegue de contenedores optimizados para backend.
-                            </p>
-                        </div>
-                    </article>
-                </div>
+    <div class="row filter-button-group text-center my-4">
+      <div class="col-md-12">
+        <button class="filter-button active" data-filter="*">Todos los Proyectos</button>
+        <button class="filter-button" data-filter=".python">Python</button>
+        <button class="filter-button" data-filter=".linux">Linux / Bash</button>
+      </div>
+    </div>
 
+    <div class="row isotope-container justify-content-center">
+      
+      <div class="col-md-4 col-sm-6 item python mb-4">
+        <div class="card p-4 h-100 shadow-sm offer-item">
+          <div class="d-flex align-items-center mb-3">
+            <div class="icon-wrap offer-svg me-3">
+              <svg width="32" height="32" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+              </svg>
             </div>
-        </section>
+            <h4 class="card-title mb-0">Gestor de Cuentas Financieras</h4>
+          </div>
+          <p class="card-text text-muted small">Aplicación desarrollada en Python enfocada en la gestión de flujos, control de ingresos y automatización de presupuestos con persistencia de datos estructurada.</p>
+          <div class="mt-auto pt-3">
+            <span class="badge bg-secondary text-dark me-1">Python</span>
+            <span class="badge bg-secondary text-dark me-1">SQLite</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 item linux mb-4">
+        <div class="card p-4 h-100 shadow-sm offer-item">
+          <div class="d-flex align-items-center mb-3">
+            <div class="icon-wrap offer-svg me-3">
+              <svg width="32" height="32" fill="currentColor" class="bi bi-terminal" viewBox="0 0 16 16">
+                <path d="M6 5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 5ZM5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5A.5.5 0 0 1 5 8Zm-1 3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 4 11Z"/>
+                <path d="M1 2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2H3a2 2 0 0 1 -2 -2V2Zm1 0v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1 -1V2a1 1 0 0 0 -1 -1H3a1 1 0 0 0 -1 1Z"/>
+              </svg>
+            </div>
+            <h4 class="card-title mb-0">Ubuntu Setup Automation Script</h4>
+          </div>
+          <p class="card-text text-muted small">Script de automatización en Bash diseñado para entornos Linux. Ejecuta la actualización del sistema e instala de forma desatendida herramientas de desarrollo (VS Code, Sublime Text, Firefox) optimizando tiempos de despliegue local.</p>
+          <div class="mt-auto pt-3">
+            <span class="badge bg-secondary text-dark me-1">Bash</span>
+            <span class="badge bg-secondary text-dark me-1">Linux CLI</span>
+            <span class="badge bg-secondary text-dark me-1">Ubuntu</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 item python mb-4">
+        <div class="card p-4 h-100 shadow-sm offer-item">
+          <div class="d-flex align-items-center mb-3">
+            <div class="icon-wrap offer-svg me-3">
+              <svg width="32" height="32" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 1 .708 0l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L14.293 8l-3.147-3.146a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </div>
+            <h4 class="card-title mb-0">Desafío: 30 Days of Python</h4>
+          </div>
+          <p class="card-text text-muted small">Repositorio de entrenamiento continuo enfocado en la resolución de algoritmos, manejo de estructuras de datos complejas y lógica de programación en Python.</p>
+          <div class="mt-auto pt-3">
+            <span class="badge bg-secondary text-dark me-1">Python</span>
+            <span class="badge bg-secondary text-dark me-1">Algoritmos</span>
+            <span class="badge bg-secondary text-dark me-1">Git</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
         <!-- ========================================== -->
         <!--                  CONTACTO                  -->
