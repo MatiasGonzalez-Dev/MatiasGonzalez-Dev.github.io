@@ -1,0 +1,7 @@
+# Ignorar mi CV en PDF
+CV_Matias_Gonzalez.pdf
+
+# Ignorar archivos de configuración o contraseñas
+.env
+contraseñas.txt
+secrets.py
